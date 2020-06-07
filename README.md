@@ -43,7 +43,7 @@ Next, follow Heroku's [guide](https://devcenter.heroku.com/articles/deploying-no
 
 Screenshots to come.
 
-# Reflection. 
+# Reflection
 
 I dove into this project having just finished an online course on JavaScript. In light of the ongoing global pandemic, I wanted to build an application that emphasized communication between two parties. Creating a chat server taught me more about JS and a ton about WebSockets and their implementation. It also acted as a refresher for Heroku and version control.
 
