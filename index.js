@@ -14,15 +14,21 @@ const sendMessage = ctx => {
 }
 
 // Announce when a user has joined the chat
-const join = ctx => {
+const userConnect = ctx => {
     ctx.io.emit('join', ctx.data);
+}
+
+// Announce when a user has left the chat.
+const userDisconnect = ctx => {
+    ctx.io.emit('leave', ctx.data);
 }
 
 server([
     get('/', ctx => render('index.html')),
+    socket('join', userConnect),
     socket('connect', updateCounter),
-    socket('disconnect', updateCounter),
     socket('message', sendMessage),
-    socket('join', join),
+    socket('disconnecting', userDisconnect), 
+    socket('disconnect', updateCounter),
 ]);
 
