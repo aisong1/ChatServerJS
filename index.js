@@ -24,6 +24,9 @@ const userDisconnect = ctx => {
 }
 
 server([
+    ctx => {
+        console.log(ctx.method, ctx.url);
+    },
     get('/', ctx => render('index.html')),
     socket('join', userConnect),
     socket('connect', updateCounter),
