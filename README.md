@@ -1,4 +1,4 @@
-# ChatServerJS
+# Chat Server 
 
 A simple chat server where users can communicate with other users. Announces when a user enters and leaves, and keeps an updated count of how many users are in the chat.
 
