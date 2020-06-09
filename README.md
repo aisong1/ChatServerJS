@@ -16,7 +16,7 @@ Check it out [here](https://glacial-oasis-25368.herokuapp.com/)!
 
 # Project Status
 
-Completed. Fully running and available as of June 7th, 2020.
+In progress - fixing bugs. Available as of June 7th, 2020.
 
 Possible future update would be to implement a 'users list' where other users can see who else is in the chat.
 
